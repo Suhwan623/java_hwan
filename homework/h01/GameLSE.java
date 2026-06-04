@@ -207,7 +207,7 @@ public class GameLSE {
                 }
             } // switch (selMenu)
             if (playerHp <= 0) {
-                System.out.println("- Game Over -");
+                System.out.println("- GameFuntion Over -");
                 sc.close();
                 isRunning = false; // 게임 종료
             }

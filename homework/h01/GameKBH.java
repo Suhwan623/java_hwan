@@ -57,7 +57,7 @@ public class GameKBH {
             }
 
             if (combatResult == 0) {
-                System.out.println("Game Over...\n");
+                System.out.println("GameFuntion Over...\n");
                 break;
             } else if (combatResult == 1) {
                 if (turn == max_turn) {
