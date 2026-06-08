@@ -16,14 +16,23 @@ public class Car {
 
     // 10Km/h 가속한다.
     void speedUp(){
-        speed += 10;
-        System.out.println("가속합니다. 현재 속도는 " + speed + "Km/h 입니다.");
+        speedUp(10);
+    }
+
+    void speedUp(int speed){
+        this.speed += speed;
+        System.out.println("가속합니다. 현재 속도는 " + this.speed + "Km/h 입니다.");
     }
 
     // 10Km/h 감속한다.
     void speedDown(){
-        speed -= 10;
+        speedDown(10);
         System.out.println("감속합니다. 현재 속도는 " + speed + "Km/h 입니다.");
+    }
+
+    void speedDown(int speed){
+        this.speed -= speed;
+        System.out.println("감속합니다. 현재 속도는 " + this.speed + "Km/h 입니다.");
     }
 
     // 기어를 1단 올린다.
