@@ -1,4 +1,4 @@
-package workspace.ch12.family.ex02;
+package workspace.ch13.familly.ex01;
 
 public class Daughter extends Parent {
 

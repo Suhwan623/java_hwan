@@ -1,9 +1,9 @@
-package workspace.ch12.family.ex01;
+package workspace.ch12.familly.ex01;
 
-public class Son {
+public class Daughter {
     String name;
 
-    Son(String name) {
+    Daughter(String name) {
         this.name = name;
     }
 
@@ -12,7 +12,7 @@ public class Son {
     }
 
     void play() {
-        System.out.println(name + ": 게임을 한다");
+        System.out.println(name + ": 화장을 한다");
     }
 
     void sleep() {

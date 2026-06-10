@@ -1,4 +1,4 @@
-package workspace.ch12.family.ex01;
+package workspace.ch13.familly.ex01;
 
 public class Parent {
     String name;
@@ -16,6 +16,7 @@ public class Parent {
     }
 
     void sleep() {
-        System.out.println(name + ": 잔다");
+        System.out.println(name + ": 꿀잠을 잔다");
     }
+
 }
