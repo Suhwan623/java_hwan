@@ -21,9 +21,10 @@ public class StringMethodTest {
 
         // 5. indexOf(): 특정 문자열이 시작되는 인덱스 반환
         System.out.println(str.indexOf("Java")); // 6
+        System.out.println(str.indexOf("java")); // -1
 
         // 6. replace(): 문자열 일부 치환
-        System.out.println(str.replace("Java", "World")); // Hello World
+        System.out.println(str.replace("Java", "자바")); // Hello 자바
 
         // 원본 문자열은 불변
         System.out.println(str); // Hello Java
@@ -35,14 +36,33 @@ public class StringMethodTest {
         System.out.println(words[1]); // Java
         System.out.println(words[2]); // Programming
 
+        // 8. toLowerCase(): 소문자로 변환
+        System.out.println(str.toLowerCase());
+
+        // 9. toUpperCase(): 대문자로 변환
+        System.out.println(str.toUpperCase());
+
+        // 10. str에 "java", "Java", "jaVA" 문자열이 나오는 인덱스를 출력하세요(6)
+        // 단, 대소문자는 구분하지 않습니다.
         System.out.println(str.toLowerCase().indexOf("java".toLowerCase()));
         System.out.println(str.toLowerCase().indexOf("Java".toLowerCase()));
-        System.out.println(str.toUpperCase().indexOf("jaVA".toLowerCase()));
+        System.out.println(str.toLowerCase().indexOf("jaVA".toLowerCase()));
 
-        String str3 = "  Hello Java World  ";
-        System.out.println(str3.trim());
+        // 11. trim(): 앞뒤의 공백 제거
+        String str3 = "   Hello Java World  ";
+        System.out.println("[" + str3 + "]");
+        System.out.println("[" + str3.trim() + "]");
 
+        // 12. str이 "Hello" 문자열로 시작하는가? true
         System.out.println(str.indexOf("Hello") == 0 ? true : false);
         System.out.println(str.startsWith("Hello"));
+
+        // 13. "Hello Hello ..." 1000개로 이루어진 문자열 생성
+        String str4 = "";
+        for(int i=0; i<100; i++){
+            str4 = str4 + "Hello ";
+        }
+        System.out.println(str4);
+
     }
 }
